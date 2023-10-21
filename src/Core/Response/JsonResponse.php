@@ -1,8 +1,7 @@
 <?php
 
-namespace Core\Response;
-require_once "Response.php";
-use Core\Response\Response;
+namespace Routing\Core\Response;
+
 class JsonResponse extends Response
 {
     private string $headers = "Content-Type: application/json";

@@ -1,8 +1,8 @@
 <?php
 
-namespace Core\Exceptions;
+namespace Routing\Core\Exceptions;
 
-use Core\Response\JsonResponse;
+use Routing\Core\Response\JsonResponse;
 
 class ResponseException extends \Exception
 {

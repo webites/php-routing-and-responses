@@ -1,24 +1,25 @@
 <?php
-require_once "Core/Route.php";
-require_once "Core/Response/JsonResponse.php";
-$routes = new \Core\Route();
+use Routing\Core\Route;
+use Routing\Core\Response\JsonResponse;
+
+$routes = new Route();
 
 $routes->get('/get', function (){
-    $response = new \Core\Response\JsonResponse(['response' => 'success']);
+    $response = new JsonResponse(['response' => 'success']);
     $response->return();
 });
 
 $routes->post('/post', function (){
-    $response = new \Core\Response\JsonResponse(['response' => 'post']);
+    $response = new JsonResponse(['response' => 'post']);
     $response->return();
 });
 
 $routes->put('/put', function (){
-    $response = new \Core\Response\JsonResponse(['response' => 'put']);
+    $response = new JsonResponse(['response' => 'put']);
     $response->return();
 });
 
 $routes->any('/any', function (){
-    $response = new \Core\Response\JsonResponse(['response' => 'any']);
+    $response = new JsonResponse(['response' => 'any']);
     $response->return();
 });

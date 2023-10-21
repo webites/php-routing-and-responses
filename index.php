@@ -1,12 +1,14 @@
 <?php
+global $routes;
+require_once "vendor/autoload.php";
 require_once "routes/web.php";
-require_once "Core/Route.php";
+use \Routing\Core\Route;
+use \Routing\Core\Exceptions\ResponseException;
 
 try {
-    $route = new \Core\Route();
+    $route = new Route;
     $route->serve($routes);
-} catch (\Core\Exceptions\ResponseException $exception){
-//    header('Content-Type: application/json', true, $exception->getCode());
+} catch (ResponseException $exception){
      $exception->getMessageJson();
 }
 

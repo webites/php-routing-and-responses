@@ -1,8 +1,9 @@
 <?php
 
-namespace Core;
-require_once "Core/Exceptions/ResponseException.php";
-use Core\Exceptions\ResponseException;
+namespace Routing\Core;
+
+use Routing\Core\Exceptions\ResponseException;
+
 class Route
 {
 

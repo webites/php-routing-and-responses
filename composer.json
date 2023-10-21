@@ -3,22 +3,22 @@
   "type": "library",
   "description": "Library for simple routing with methods, defines controllers and responses",
   "keywords": ["routing","responses"],
-  "homepage": "https://github.com/Seldaek/monolog",
-  "license": "MIT",
+  "homepage": "https://github.com/webites/php-routing-and-responses",
+  "license": "GPL-3.0+",
   "authors": [
     {
-      "name": "Jordi Boggiano",
-      "email": "j.boggiano@seld.be",
-      "homepage": "http://seld.be",
-      "role": "Developer"
+      "name": "webites.pl",
+      "email": "lgolabek@outlook.com",
+      "homepage": "https://webites.pl/",
+      "role": "Owner"
     }
   ],
   "require": {
     "php": ">=8.0.0"
   },
   "autoload": {
-    "psr-0": {
-      "Monolog": "src"
+    "psr-4": {
+      "Routing\\": "src"
     }
   }
 }
