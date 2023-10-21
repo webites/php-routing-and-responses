@@ -1,5 +1,6 @@
 .htaccess
 composer.lock
 index.php
-/routes
+/routes/*
 /.idea
+/templates

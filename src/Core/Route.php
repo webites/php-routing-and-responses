@@ -59,13 +59,13 @@ class Route
                 if (strtoupper($data['methods']) == $method || $data['methods'] === 'any'){
                     $data['callback']();
                 } else {
-                    throw new ResponseException("Bad method", 403);
+                    throw new ResponseException("Method Not Allowed", 405);
                 }
                 $is_route = true;
             }
         }
         if(!$is_route){
-            throw new ResponseException("No route", 404);
+            throw new ResponseException("No route registered", 404);
         }
     }
 }
